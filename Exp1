@@ -1,0 +1,96 @@
+Aim:
+To perform arithmetic, comparison, assignment, logical, and bitwise operations using Python.
+Algorithm:
+Start the program.
+Assign values to variables �, �, �, �, and �.
+Perform arithmetic operations (addition, subtraction, multiplication, division, modulus).
+Calculate expressions like �, �, �, etc.
+Perform comparison operations between � and �.
+Perform assignment operations on variable �.
+Perform logical operations using � and �.
+Perform bitwise operations on � and �.
+Display all results.
+Stop the program.
+*source code*
+a = 5
+b = 4
+x = 10
+h = 7.5
+l = 5
+# Arithmetic operations
+print("addition:", a + b)
+print("subtraction:", a - b)
+print("multiplication:", a * b)
+print("division:", a / b)
+print("modulus:", a % b)
+# Expressions
+print("value of a^3 =", a**3)
+print("value of b^3 =", b**3)
+print("value of 3ab^2 =", 3*a*b**2)
+print("value of 3ba^2 =", 3*b*a**2)
+print("value of (a+b)^3 =", a**3 + b**3 + 3*a*b**2 + 3*a**2*b)
+print("value of (a+b)(a-b) =", (a+b)*(a-b))
+print("value of pi*h =", 3.14*h)
+print("value of 2*pi*h =", 2*3.14*h)
+# Comparison operators
+print("a == b:", a == b)
+print("a != b:", a != b)
+print("a > b:", a > b)
+print("a < b:", a < b)
+print("a >= b:", a >= b)
+print("a <= b:", a <= b)
+# Assignment operators
+x += 5
+print("x += 5:", x)
+x -= 6
+print("x -= 6:", x)
+x *= 3
+print("x *= 3:", x)
+x /= 4
+print("x /= 4:", x)
+x %= 7
+print("x %= 7:", x)
+# Logical operators
+print("a and b:", a and b)
+print("a or b:", a or b)
+print("not a:", not a)
+# Bitwise operators
+print("a & b:", a & b)
+print("a | b:", a | b)
+print("a ^ b:", a ^ b)
+print("~a:", ~a)
+print("a << 1:", a << 1)
+print("a >> 1:", a >> 1)
+addition: 9
+subtraction: 1
+multiplication: 20
+division: 1.25
+modulus: 1
+value of a^3 = 125
+value of b^3 = 64
+value of 3ab^2 = 240
+value of 3ba^2 = 300
+value of (a+b)^3 = 729
+value of (a+b)(a-b) = 9
+value of pi*h = 23.55
+value of 2*pi*h = 47.1
+a == b: False
+a != b: True
+a > b: True
+a < b: False
+a >= b: True
+a <= b: False
+x += 5: 15
+x -= 6: 9
+x *= 3: 27
+x /= 4: 6.75
+x %= 7: 6.75
+a and b: 4
+a or b: 5
+not a: False
+a & b: 4
+a | b: 5
+a ^ b: 1
+~a: -6
+a << 1: 10
+a >> 1: 2
