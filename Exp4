@@ -1,0 +1,97 @@
+Aim
+To write a Python program to implement various list operations.
+Algorithm
+Start the program.
+Create a list num = [50, 30, 20, 40, 60, 20].
+Display the length of the list.
+Append an element to the list and display it.
+Insert an element at a specific position and display it.
+Remove an element from the list and display it.
+Remove the last element using pop() and display it.
+Count occurrences of an element in the list.
+Find the index of an element.
+Sort the list and display it.
+Reverse the list and display it.
+Copy the list and display it.
+Extend the list with another list and display it.
+Find maximum value in the list.
+Find minimum value in the list.
+Find sum of all elements in the list.
+Clear the list and display it.
+Stop the program.
+
+CODE
+
+num = [50, 30, 20, 40, 60, 20]
+
+print("the length of the array is :", len(num))
+
+# append
+num.append(10)
+print("the element added is:", num)
+
+# insert
+num.insert(2, 90)
+print("after insertion:", num)
+
+# remove
+num.remove(30)
+print("after remove():", num)
+
+# pop
+num.pop()
+print("after pop():", num)
+
+# count
+print("after count:", num.count(20))
+
+# index
+x = num.index(90)
+print("after index():", x)
+
+# sort
+num.sort()
+print("after sorting:", num)
+
+# reverse
+num.reverse()
+print("after reverse:", num)
+
+# copy
+new_list = num.copy()
+print("after copying:", new_list)
+
+# extend
+num.extend([15, 5])
+print("after extending:", num)
+
+# max
+print("after max:", max(num))
+
+# min
+print("after min:", min(num))
+
+# sum
+print("after sum:", sum(num))
+
+# clear
+num.clear()
+print("after clear():", num)
+
+OUTPUT 
+
+the length of the array is : 6
+the element added is: [50, 30, 20, 40, 60, 20, 10]
+after insertion: [50, 30, 90, 20, 40, 60, 20, 10]
+after remove(): [50, 90, 20, 40, 60, 20, 10]
+after pop(): [50, 90, 20, 40, 60, 20]
+after count: 2
+after index(): 1
+after sorting: [20, 20, 40, 50, 60, 90]
+after reverse: [90, 60, 50, 40, 20, 20]
+after copying: [90, 60, 50, 40, 20, 20]
+after extending: [90, 60, 50, 40, 20, 20, 15, 5]
+after max: 90
+after min: 5
+after sum: 300
+after clear(): []
