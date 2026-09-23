@@ -1,0 +1,116 @@
+Program 1: Employee Salary Classification
+
+Aim
+To write a Python program to calculate employee net salary and classify the job role based on salary.
+
+Algorithm
+Start the program.
+Define a function empcalc().
+Input employee name.
+Input employee age.
+Input employee salary.
+Calculate HRA = 35% of salary.
+Calculate PF = 25% of salary.
+Calculate net salary = salary + HRA + PF.
+If net salary ≥ 30000 and ≤ 100000 → print "senior manager".
+Else if net salary ≥ 20000 and ≤ 29000 → print "manager".
+Else → print "front level job".
+Return name, age, and net salary.
+Call the function and store returned values.
+Display employee name, age, and salary.
+Stop the program.
+
+code
+def empcalc():
+    name = input("enter name: ")
+    age = int(input("enter age: "))
+    sal = float(input("enter salary: "))
+
+    hra = (35 * sal) / 100
+    pf = (25 * sal) / 100
+    netsal = sal + hra + pf
+
+    if (netsal >= 30000) and (netsal <= 100000):
+        print("senior manager")
+    elif (netsal >= 20000) and (netsal <= 29000):
+        print("manager")
+    else:
+        print("front level job")
+
+    return name, age, netsal
+
+
+name, age, netsal = empcalc()
+
+print("employee name:", name)
+print("employee age:", age)
+print("employee salary:", netsal)
+
+output 
+enter name: gser
+enter age: 23
+enter salary: 34589
+senior manager
+employee name: gser
+employee age: 23
+employee salary: 55342.4
+
+Program 2: Tuple Operations
+
+Aim
+To write a Python program to perform various operations on a tuple.
+
+Algorithm
+Start the program.
+Create a tuple t = (10, 20, 30, 40, 50).
+Display the tuple.
+Display first element.
+Display last element.
+Find and display length of tuple.
+Count occurrences of an element.
+Find index of an element.
+Find maximum element.
+Find minimum element.
+Find sum of elements.
+Check if an element is present.
+Convert tuple to list.
+Convert list back to tuple.
+Stop the program.
+
+code
+
+t = (10, 20, 30, 40, 50)
+
+print("tuple:", t)
+print("first element:", t[0])
+print("last element:", t[-1])
+print("length:", len(t))
+print("count of 20:", t.count(20))
+print("index of 30:", t.index(30))
+print("maximum:", max(t))
+print("minimum:", min(t))
+print("sum:", sum(t))
+print("is 40 present?", 40 in t)
+
+# conversion to list
+l = list(t)
+print("converted tuple to list:", l)
+
+# convert list back to tuple
+t2 = tuple(l)
+print("list converted to tuple:", t2)
+
+ouput
+
+tuple: (10, 20, 30, 40, 50)
+first element: 10
+last element: 50
+length: 5
+count of 20: 1
+index of 30: 2
+maximum: 50
+minimum: 10
+sum: 150
+is 40 present? True
+converted tuple to list: [10, 20, 30, 40, 50]
+list converted to tuple: (10, 20, 30, 40, 50)
