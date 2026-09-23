@@ -1,0 +1,107 @@
+Aim
+To write a Python program to evaluate the performance of cricket players based on batting, bowling, and fielding statistics.
+
+Algorithm
+
+Start the program.
+Input the number of players n.
+Repeat the following steps for each player:
+a. Display player number.
+b. Input runs scored (rs).
+c. Input balls faced (bf).
+d. Input number of fours (fours).
+e. Input number of sixes (six).
+f. Input wickets taken (wk).
+g. Input runs conceded (rc).
+h. Input overs bowled (ob).
+i. Input catches taken (ct).
+Calculate:
+Batting strike rate → sr = (rs / bf) * 100
+Bowling economy → eco = rc / ob
+Classify batting performance:
+If sr ≥ 150 → Excellent batter
+Else if sr ≥ 100 → Good batter
+Else → Average batter
+Classify bowling performance:
+If eco ≤ 6 → Excellent bowler
+Else if eco ≤ 8 → Good bowler
+Else → Average bowler
+Classify fielding performance:
+If ct ≥ 3 → Outstanding fielder
+Else → Needs improvement
+Display results for each player.
+Stop the program.
+
+PROGRAM 
+n = int(input("Enter no. of players: "))
+
+for i in range(n):
+    print("\nPlayer", i+1)
+
+    rs = int(input("Enter the runs scored: "))
+    bf = int(input("Enter the balls faced: "))
+    fours = int(input("Enter fours: "))
+    six = int(input("Enter sixes: "))
+
+    wk = int(input("Enter the wickets taken: "))
+    rc = int(input("Enter the runs conceded: "))
+    ob = int(input("Enter the overs bowled: "))
+
+    ct = int(input("Enter the catches taken: "))
+
+    # Calculations
+    sr = (rs / bf) * 100
+    eco = rc / ob
+
+    # Batting performance
+    if sr >= 150:
+        print("excellent batter")
+    elif sr >= 100:
+        print("good batter")
+    else:
+        print("average batter")
+
+    # Bowling performance
+    if eco <= 6:
+        print("excellent bowler")
+    elif eco <= 8:
+        print("good bowler")
+    else:
+        print("average bowler")
+
+    # Fielding performance
+    if ct >= 3:
+        print("outstanding fielder")
+    else:
+        print("needs improvement")
+
+OUTPUT
+Enter no. of players: 2
+
+Player 1
+Enter the runs scored: 146
+Enter the balls faced: 50
+Enter fours: 6
+Enter sixes: 16
+Enter the wickets taken: 4
+Enter the runs conceded: 29
+Enter the overs bowled: 2
+Enter the catches taken: 3
+average batter
+average bowler
+outstanding fielder
+needs improvement
+
+Player 2
+Enter the runs scored: 179
+Enter the balls faced: 62
+Enter fours: 10
+Enter sixes: 21
+Enter the wickets taken: 8
+Enter the runs conceded: 32
+Enter the overs bowled: 3
+Enter the catches taken: 2
+good batter
+average bowler
+outstanding fielder
+needs improvement
