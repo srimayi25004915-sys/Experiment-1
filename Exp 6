@@ -1,0 +1,113 @@
+Aim
+To demonstrate dictionary and related functions in python 
+
+Algorithm
+Start the program.
+Create a dictionary emp with keys: name, age, salary, department.
+Print the dictionary.
+Access and display individual elements using keys.
+Add a new key-value pair (phone number).
+Update the salary value.
+Delete the department key.
+Display keys, values, and items of the dictionary.
+Use get() method to retrieve values.
+Update multiple values using update() method.
+Take input string from the user. 12. Initialize an empty dictionary frequency. 13. Traverse each character in the string:
+If character exists in dictionary, increment count.
+Else, add it with count 1.
+Print each character with its frequency.
+Stop.
+
+CODE
+# Dictionary creation
+emp = {"name": "rahul", "age": 35, "sal": 50000, "dept": "IT"}
+
+print("The dictionary is:", emp)
+
+# Accessing elements
+print("name:", emp["name"])
+print("age:", emp["age"])
+print("salary:", emp["sal"])
+print("department:", emp["dept"])
+
+# Adding element
+emp["ph no"] = 9988776655
+print("after adding:", emp)
+
+# Updating element
+emp["sal"] = 60000
+print("after updating:", emp)
+
+# Deleting element
+del emp["dept"]
+print("after deleting:", emp)
+
+# Keys, values, items
+print("keys:")
+print(emp.keys())
+
+print("values:")
+print(emp.values())
+
+print("items:")
+print(emp.items())
+
+# Using get()
+print("name:", emp.get("name"))
+print("dept:", emp.get("dept", "not available"))
+
+# Update multiple values
+emp.update({"age": 36, "ph no": 8567894043})
+print("after update")
+print(emp)
+
+# Character frequency
+text = input("enter the string:")
+frequency = {}
+
+for ch in text:
+    if ch in frequency:
+        frequency[ch] = frequency[ch] + 1
+    else:
+        frequency[ch] = 1
+
+print("character frequency:")
+for ch, count in frequency.items():
+    print(ch, ":", count)
+
+OUTPUT 
+The dictionary is: {'name': 'rahul', 'age': 35, 'sal': 50000, 'dept': 'IT'}
+
+name: rahul
+age: 35
+salary: 50000
+department: IT
+
+after adding: {'name': 'rahul', 'age': 35, 'sal': 50000, 'dept': 'IT', 'ph no': 9988776655}
+
+after updating: {'name': 'rahul', 'age': 35, 'sal': 60000, 'dept': 'IT', 'ph no': 9988776655}
+
+after deleting: {'name': 'rahul', 'age': 35, 'sal': 60000, 'ph no': 9988776655}
+
+keys:
+dict_keys(['name', 'age', 'sal', 'ph no'])
+
+values:
+dict_values(['rahul', 35, 60000, 9988776655])
+
+items:
+dict_items([('name', 'rahul'), ('age', 35), ('sal', 60000), ('ph no', 9988776655)])
+
+name: rahul
+dept: not available
+
+after update
+{'name': 'rahul', 'age': 36, 'sal': 60000, 'ph no': 8567894043}
+
+enter the string: worry
+
+character frequency:
+w : 1
+o : 1
+r : 2
+y : 1
